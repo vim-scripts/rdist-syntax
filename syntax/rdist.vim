@@ -12,7 +12,7 @@ elseif exists("b:current_syntax")
 	finish
 endif
 
-" define the rdist syntax
+" Define the rdist syntax
 syn match rdistComment /#.*/ contains=rdistTodo
 syn keyword rdistTodo TODO FIX FIXME NOTE XXX WARNING contained
 syn region rdistString start=/"/hs=s+1 skip=/\\"/ end=/"/he=e-1
